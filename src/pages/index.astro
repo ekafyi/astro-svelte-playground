@@ -1,13 +1,15 @@
 ---
+import SiteLayout from "@/components/layouts/SiteLayout.astro";
 ---
 
-<html lang="en">
-	<head>
-		<meta charset="utf-8" />
-		<meta name="viewport" content="width=device-width" />
-		<title>Astro</title>
-	</head>
-	<body>
-		<h1>Hello Astro!</h1>
-	</body>
-</html>
+<SiteLayout>
+	<h1 class="text-4xl font-semibold">Astro + Svelte playground</h1>
+	<ul>
+		<li>
+			<a href="/tabs-page">Tabs</a>
+		</li>
+		<li>
+			<a href="/slide-page">Slide</a>
+		</li>
+	</ul>
+</SiteLayout>

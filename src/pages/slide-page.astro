@@ -1,15 +1,9 @@
 ---
+import SiteLayout from "@/components/layouts/SiteLayout.astro";
 import MySvelteSplide from "@/components/MySvelteSplide.svelte";
 ---
 
-<html lang="en">
-	<head>
-		<meta charset="utf-8" />
-		<meta name="viewport" content="width=device-width" />
-		<title>Astro</title>
-	</head>
-	<body>
-		<h1>Hello slide!</h1>
-		<MySvelteSplide client:load />
-	</body>
-</html>
+<SiteLayout>
+	<h1>Hello slide!</h1>
+	<MySvelteSplide client:load />
+</SiteLayout>

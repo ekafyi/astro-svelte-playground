@@ -1,15 +1,9 @@
 ---
+import SiteLayout from "@/components/layouts/SiteLayout.astro";
 import MySvelteTabs from "@/components/MySvelteTabs.svelte";
 ---
 
-<html lang="en">
-	<head>
-		<meta charset="utf-8" />
-		<meta name="viewport" content="width=device-width" />
-		<title>Astro</title>
-	</head>
-	<body>
-		<h1>Hello tabs!</h1>
-		<MySvelteTabs client:load />
-	</body>
-</html>
+<SiteLayout>
+	<h1>Hello tabs!</h1>
+	<MySvelteTabs client:load />
+</SiteLayout>
