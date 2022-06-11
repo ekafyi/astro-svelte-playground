@@ -1,15 +1,23 @@
 ---
 import SiteLayout from "@/components/layouts/SiteLayout.astro";
+
+const navs = [
+	{ text: "Tabs", href: "/tabs-page" },
+	{ text: "Slide", href: "/slide-page" },
+];
 ---
 
 <SiteLayout>
 	<h1 class="asp-page-title mb-8">Astro + Svelte playground</h1>
-	<ul>
-		<li>
-			<a href="/tabs-page">Tabs</a>
-		</li>
-		<li>
-			<a href="/slide-page">Slide</a>
-		</li>
+	<ul class="list-disc pl-5 text-teal-600 text-lg">
+		{/* 
+			Known issue: JSX array breaks prettier-plugin-astro
+			@link https://github.com/withastro/prettier-plugin-astro/issues/115
+		*/}
+		{navs.map((item) => (
+			<li>
+				<a class="border-b hover:border-teal-400" href={item.href}>{item.text}</a>
+			</li>
+		))}
 	</ul>
 </SiteLayout>
