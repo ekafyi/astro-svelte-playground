@@ -6,6 +6,10 @@ Features:
 - Tailwind
 - SSR with Netlify adapter
 
+Motivation:
+- Check if it's possible to do x in Astro + Svelte
+- Quickly create issue reproductions
+
 ---
 
 Original README from astro.new
