@@ -59,7 +59,7 @@
 
 <div class="w-full max-w-md mx-auto px-2 py-16 sm:px-0">
 	<TabGroup>
-		<TabList class="flex p-1 space-x-1 bg-teal-900/75 rounded-xl">
+		<TabList class="flex p-1 space-x-1 bg-teal-900/90 rounded-xl">
 			{#each Object.keys(categories) as category (category)}
 				<Tab
 					class={({ selected }) =>
