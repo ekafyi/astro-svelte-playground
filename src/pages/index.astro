@@ -1,6 +1,8 @@
 ---
 import SiteLayout from "@/components/layouts/SiteLayout.astro";
 
+Astro.response.headers.set("cache-control", "max-age=3600, must-revalidate");
+
 const navs = [
 	{ text: "Tabs", href: "/tabs-page" },
 	{ text: "Slide", href: "/slide-page" },
